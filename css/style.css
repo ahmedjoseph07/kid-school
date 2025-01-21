@@ -335,10 +335,10 @@ body {
 /* Story Section */
 .story {
     margin-top: 1.5rem;
-    background: url('assets/bg.png'), linear-gradient(0.00deg, #fea3014d, #ffffff4d 100%);
+    background: url('/assets/bg.png'), linear-gradient(0.00deg, #fea3014d, #ffffff4d 100%);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-size: center;
+    background-position: 1rem auto;
     justify-content: space-evenly;
     align-items: center;
     max-width: 1920px;
@@ -506,6 +506,93 @@ body {
 
 }
 
+/* Footer */
+
+.footer {
+    background-color: rgb(1, 172, 253);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7.5rem 8.75rem;
+    gap: 10rem;
+}
+
+.title {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin-bottom: 2.25rem;
+}
+
+.title-text {
+    color: #ffffff;
+    font-size: 2.625rem;
+    font-weight: 700;
+    text-align: left;
+}
+
+.footer-desc {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+}
+.footer-about{
+    margin-top: 1.5rem;
+}
+.footer-about>h2 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: left;
+    width: 9.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer-ul {
+    list-style: none;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.footer-ul li {
+    margin-bottom: 1.25rem;
+    cursor: pointer;
+}
+
+.footer-ul li:hover {
+    scale: 1.05;
+    transition: all .5s ease-out;
+}
+
+.footer-touch{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-top:-6rem;
+    
+}
+.footer-touch>h2 {
+    width: 11rem;
+    color: #ffffff;
+    font-size: 1.625rem;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.footer-icons{
+    display: flex;
+    gap: .625rem;
+    border-radius: 4px;
+}
+.footer-icon:hover{
+    scale: 1.05;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
 @media screen and (max-width:576px) {
 
     .nav-ul,
@@ -578,8 +665,9 @@ body {
     .curr-section {
         width: 20rem;
         margin-bottom: 3.75rem;
-        background-size: 100%;
-        background-position: 100%;
+        bac
+        background-size: cover;
+        background-position: center;
     }
 
     .card {
@@ -608,9 +696,11 @@ body {
     .item-1 {
         display: none;
     }
-    .item{
+
+    .item {
         height: 11.35rem;
     }
+
     .badge-secondary,
     .badge-tertiary {
         top: 5.5rem;
@@ -633,9 +723,21 @@ body {
         font-size: .50rem;
         font-weight: 700;
         line-height: 1rem;
-        padding:-1.5rem ;
+        padding: -1.5rem;
     }
-
+    .story{
+        height: 37.5rem;
+    }
+    .footer{
+        flex-direction:column;
+        align-items: flex-start;
+        padding-left:1rem;
+        width: auto;
+        height: auto;
+    }
+    .footer-about{
+        margin-top: -7.5rem;
+    }
 }
 
 /* Shared Styles */
