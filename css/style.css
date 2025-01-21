@@ -190,7 +190,7 @@ body {
 
 /* Main Section */
 .curr-section {
-    background-image: url("assets/bg.png");
+    background-image: url("../assets/bg.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -335,7 +335,7 @@ body {
 /* Story Section */
 .story {
     margin-top: 1.5rem;
-    background: url('assets/bg.png'), linear-gradient(0.00deg, #fea3014d, #ffffff4d 100%);
+    background: url('../assets/bg.png'), linear-gradient(0.00deg, #fea3014d, #ffffff4d 100%);
     background-repeat: no-repeat;
     background-size: center;
     background-position: 1rem auto;
